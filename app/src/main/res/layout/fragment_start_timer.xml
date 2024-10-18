@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StartTimer">
+
+    <TextView
+        android:id="@+id/txtviewtimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:textSize="80sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/circularprogress"
+        app:layout_constraintEnd_toEndOf="@+id/circularprogress"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/circularprogress"
+        app:layout_constraintTop_toTopOf="@+id/circularprogress"
+        tools:text="00.00" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circularprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="80"
+        android:indeterminate="false"
+        app:indicatorColor="@color/red"
+        app:indicatorSize="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/red"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/circularprogress"
+        app:layout_constraintStart_toStartOf="@+id/circularprogress"
+        app:layout_constraintTop_toBottomOf="@+id/circularprogress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Remaining Exercice:"
+        app:layout_constraintBottom_toTopOf="@+id/circularprogress"
+        app:layout_constraintEnd_toEndOf="@+id/circularprogress"
+        app:layout_constraintStart_toStartOf="@+id/circularprogress" />
+
+    <TextView
+        android:id="@+id/txtviewnoofexercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        tools:text="5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

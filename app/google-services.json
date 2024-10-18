@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1086380294345",
+    "project_id": "fitnesstracker-b5e39",
+    "storage_bucket": "fitnesstracker-b5e39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086380294345:android:5138b9413cb007290bcd18",
+        "android_client_info": {
+          "package_name": "com.example.fitnesstrackerfirestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtjLmSmvK6ZpdmG1XHMFrsLpRhtY-Wb7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

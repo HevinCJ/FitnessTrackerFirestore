@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fitnessnav"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.fitnesstrackerfirestore.fragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_home_to_setTimer"
+            app:destination="@id/setTimer" />
+    </fragment>
+    <fragment
+        android:id="@+id/setTimer"
+        android:name="com.example.fitnesstrackerfirestore.fragment.SetTimer"
+        android:label="fragment_set_timer"
+        tools:layout="@layout/fragment_set_timer" >
+
+        <action
+            android:id="@+id/action_setTimer_to_startTimer"
+            app:destination="@id/startTimer" />
+        <action
+            android:id="@+id/action_setTimer_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/startTimer"
+        android:name="com.example.fitnesstrackerfirestore.fragment.StartTimer"
+        android:label="fragment_start_timer"
+        tools:layout="@layout/fragment_start_timer" >
+
+        <action
+            android:id="@+id/action_startTimer_to_home"
+            app:destination="@id/home" />
+        <argument
+            android:name="timerdata"
+            app:argType="com.example.fitnesstrackerfirestore.models.TimerParameter" />
+    </fragment>
+</navigation>
